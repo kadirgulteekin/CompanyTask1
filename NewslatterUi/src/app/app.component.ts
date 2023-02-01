@@ -18,13 +18,11 @@ import { Component } from '@angular/core';
         <li class="nav-item">
           <a class="nav-link" routerLink="/newslatter" >Haberler</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
-
         <button class="btn btn-outline-success" routerLink="/login" *ngIf="!isAuth" type="submit">Login</button>
         <span class="alert alert-success mx-2"  *ngIf="isAuth,isSeen"  >Hoşgeldiniz Kadir Gültekin</span>
         <span class="alert alert-warning mx-2"  *ngIf="isAuth" style="cursor: pointer;">Çıkış Yap</span>

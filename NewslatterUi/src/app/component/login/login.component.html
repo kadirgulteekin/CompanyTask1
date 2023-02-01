@@ -31,7 +31,7 @@
                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                 <p class="text-white-50 mb-5">Please enter your login and password!</p>
                 <div class="form-outline form-white mb-4">
-                  <input type="email" ngModel name="usurName" id="typeEmailX" class="form-control form-control-lg" />
+                  <input type="text"  [appCheckInputValid]="usurName"   #usurName ngModel  name="usurName" required minlength="3" id="typeEmailX" class="form-control" />
                   <label class="form-label" for="typeEmailX">Email</label>
                   <div class="invalid-feedback">
                        Usur name / email is required
@@ -39,9 +39,9 @@
                 </div>
 
                 <div class="form-outline form-white mb-4">
-                  <input type="password" ngModel name="password" id="typePasswordX" class="form-control form-control-lg" />
+                  <input type="password" [appCheckInputValid]="password" #password ngModel name="password" required minlength="3" id="typePasswordX" class="form-control"/>
                   <label class="form-label" for="typePasswordX">Password</label>
-                  <div class="valid-feedback">
+                  <div class="invalid-feedback">
                       Password şs required
                   </div>
                 </div>
