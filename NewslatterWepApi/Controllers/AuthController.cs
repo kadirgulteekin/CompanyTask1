@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NewslatterWepApi.Context;
 using NewslatterWepApi.Dtos;
 using NewslatterWepApi.Models;
 

@@ -1,4 +1,4 @@
-using NewslatterWepApi.Controllers;
+using NewslatterWepApi.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

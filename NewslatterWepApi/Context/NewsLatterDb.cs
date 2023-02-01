@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NewslatterWepApi.Models;
 
-namespace NewslatterWepApi.Controllers
+namespace NewslatterWepApi.Context
 {
     public class NewsLatterDb : DbContext
     {
