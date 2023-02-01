@@ -54,7 +54,7 @@ namespace NewslatterWepApi.Controllers
             if (user == null)
                 return BadRequest("Kullanıcı ya da email adresi bulunamadı");
             if (user.Password == loginDto.Password)
-                return Ok("Kullanıcı girişi başarılı");
+                return Ok(user);
             else
             {
                 return BadRequest("Kulanııcı şifresini yanlış girdiniz!");
@@ -62,3 +62,4 @@ namespace NewslatterWepApi.Controllers
         }
     }
 }
+    
